@@ -1,0 +1,2 @@
+model,order,seasonal_order,RMSE_kWh,MAPE_percent
+SARIMA,"(1, 1, 1)","(1, 1, 1, 7)",1783.185590676939,7.339741947005021
