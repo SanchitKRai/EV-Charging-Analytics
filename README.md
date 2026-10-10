@@ -159,7 +159,7 @@ The preferred model should demonstrate reliable performance on held-out observat
 
 Model selection should consider forecasting accuracy, stability, and the practical implications of prediction errors.
 
-> **Note:** The actual train-test split, evaluation period, baseline configuration, and metric values should be documented based on the implemented forecasting pipeline.
+> **Note:*** The actual train-test split, evaluation period, baseline configuration, and metric values should be documented based on the implemented forecasting pipeline.
 
 # 🤖 Forecasting Models
 
