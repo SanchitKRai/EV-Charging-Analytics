@@ -132,6 +132,34 @@ Weekend demand was approximately **26.9% lower** than weekday demand.
 This indicates a strong weekly demand pattern.
 
 ---
+---
+
+## 🧪 Model Evaluation Methodology
+
+To ensure a fair comparison between forecasting approaches, models should be evaluated using a consistent time-series validation strategy.
+
+### Evaluation Strategy
+
+* **Chronological split:** Keep training observations earlier than testing observations to preserve the temporal order of the data.
+* **Forecast horizon:** Evaluate models over the same forecast period wherever possible.
+* **Baseline comparison:** Compare advanced models against a simple baseline, such as predicting demand using the previous week's corresponding day.
+* **Consistent evaluation:** Calculate evaluation metrics on the same test observations for all compared models.
+
+### Evaluation Metrics
+
+| Metric | Description                    | Interpretation                                                                |
+| ------ | ------------------------------ | ----------------------------------------------------------------------------- |
+| RMSE   | Root Mean Squared Error        | Penalizes larger forecasting errors more heavily.                             |
+| MAPE   | Mean Absolute Percentage Error | Expresses average absolute percentage error.                                  |
+| MAE    | Mean Absolute Error            | Measures the average absolute difference between actual and predicted demand. |
+
+### Model Selection
+
+The preferred model should demonstrate reliable performance on held-out observations while producing forecasts that are useful for charging infrastructure planning.
+
+Model selection should consider forecasting accuracy, stability, and the practical implications of prediction errors.
+
+> **Note:** The actual train-test split, evaluation period, baseline configuration, and metric values should be documented based on the implemented forecasting pipeline.
 
 # 🤖 Forecasting Models
 
