@@ -177,3 +177,12 @@ ARIMA Order:
 
 Seasonal Order:
 (1, 1, 1, 7)
+
+---
+
+## ⚠️ Forecasting Limitations
+
+- Forecasts are estimates based on historical charging patterns and may not reflect unexpected changes in EV adoption or charging behaviour.
+- Model performance depends on the quality and coverage of historical data.
+- External factors such as electricity prices, weather, infrastructure expansion, and policy changes may affect future charging demand.
+- Forecasts should support infrastructure planning rather than be treated as guaranteed predictions.
